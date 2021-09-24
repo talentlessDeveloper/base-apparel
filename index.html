@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <section class="apparel">
+      <header class="header container">
+        <img src="./images/logo.svg" alt="logo" />
+      </header>
+      <div class="hero">
+        <img
+          src="./images/hero-mobile.jpg"
+          alt="hero-mobile"
+          class="hero-mobile"
+        />
+
+        <img
+          src="./images/hero-desktop.jpg"
+          alt="hero-desktop"
+          class="hero-desktop"
+        />
+      </div>
+
+      <div class="content container">
+        <h1 class="content__title">
+          We're <br /><span
+            >Coming<br />
+            Soon</span
+          >
+        </h1>
+
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form class="form" novalidate>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              id="email"
+              class="form__input"
+            />
+
+            <img
+              src="./images/icon-error.svg"
+              alt="error"
+              class="form__error-img error hide"
+            />
+            <button type="submit" class="form__button">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </button>
+
+            <p class="form__error-msg error hide">
+              Please provide a valid email
+            </p>
+
+            <p class="form__success-msg success hide">
+              Email registered successfully
+            </p>
+          </div>
+        </form>
+      </div>
+      <footer class="footer container">
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Kareem</a>.
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>
